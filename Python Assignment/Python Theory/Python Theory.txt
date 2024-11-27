@@ -1,0 +1,383 @@
+
+(*)Introduction to Python and its Features (simple, high-level, interpreted language).
+-->Python is an interpreted, object-oriented, high-level programming language. As it is general-purpose, it has a wide range of applications from web development, building desktop GUI to scientific and mathematical computing. Python is popular for its simple and relatively straightforward syntax.
+
+(*) History and evolution of Python. 
+-->  
+- Python laid its foundation in the late 1980s.
+- The implementation of Python was started in December 1989 by Guido Van Rossum at CWI in Netherland.
+- In February 1991, Guido Van Rossum published the code (labeled version 0.9.0) to alt.sources.
+- In 1994, Python 1.0 was released with new features like lambda, map, filter, and reduce.
+- Python 2.0 added new features such as list comprehensions, garbage     collection systems.
+- On December 3, 2008, Python 3.0 (also called "Py3K") was released. It was designed to rectify the fundamental flaw of the language.
+- ABC programming language is said to be the predecessor of Python language, which was capable of Exception Handling and interfacing with the Amoeba Operating System.
+ 
+(*) Advantages of using Python over other programming languages. 
+--> Python is a widely used programming language that is utilized extensively in various disciplines such as web development, data analysis, artificial intelligence, and scientific computing. It has a number of benefits that make it a suitable option for different types of projects.
+
+1. The simplicity of Usage and Learning
+2. Versatility
+3. Performance
+4. Data Analysis and Scientific Computing
+5. Large and Active Community
+6. Flexibility in Deployment
+7. Object-Oriented Programming
+8. Functional Programming
+9. Testing and Debugging
+10. Integration with Other Languages and Systems
+
+(*)  Indentation, comments, and naming conventions in Python. 
+ 
+1. comments
+- We'll study how to write comments in our program in this article. We'll also learn about single-line comments, multi-line comments, documentation strings, and other Python comments.
+
+* Single-Line Comments
+- Single-line remarks in Python have shown to be effective for providing quick descriptions for parameters, function definitions, and expressions. A single-line comment of Python is the one that has a hashtag # at the beginning of it and continues until the finish of the line. If the comment continues to the next line, add a hashtag to the subsequent line and resume the conversation. Consider the accompanying code snippet, which shows how to use a single line comment:
+
+Multi-Line Comments
+Python does not provide the facility for multi-line comments. However, there are indeed many ways to create multi-line comments.
+
+EXample :
+'''
+print("Welcome to my page")
+
+'''
+(*)  Writing readable and maintainable code. 
+-> Clean code is a term used to describe computer code that is easy to read, understand, and maintain. Clean code is written in a way that makes it simple, concise, and expressive. It follows a set of conventions, standards, and practices that make it easy to read and follow.
+
+
+
+
+(*) Understanding data types: integers, floats, strings, lists, tuples, dictionaries, sets. 
+1.Integers (int)
+-->Whole numbers, both positive and negative, without any decimal point.
+* Example: 5, -3, 100
+
+2.Floats (float)
+->Numbers that have a decimal point, used to represent real numbers.
+Example: 3.14, -0.001, 2.0
+
+3.Strings (str)
+->A sequence of characters enclosed in single (') or double (") quotes. Strings can represent words, sentences, or any text data.
+->*Example: 'Hello', "World", '123'
+
+4. Lists (list)
+->Ordered, mutable (changeable), and can hold items of different data types. Lists are enclosed in square brackets ([]).
+->*Example: [1, 2, 3], ["apple", "banana", "cherry"], [True, 2.5, "hello"]
+
+5.Tuples (tuple)
+->Similar to lists, but immutable (cannot be changed after creation). They are enclosed in parentheses (()).
+->*Example: (1, 2, 3), ("apple", "orange", "banana")
+
+6. Dictionaries (dict)
+->Unordered collections of key-value pairs. Keys must be unique and immutable (e.g., strings, numbers), and values can be of any data type. Dictionaries are enclosed in curly braces ({}).
+->Example: {"name": "Alice", "age": 30}, {"brand": "Apple", "model": "iPhone"}
+
+7.Sets (set)
+->Unordered collections of unique elements. Sets are mutable but do not allow duplicate items. They are enclosed in curly braces ({}), but unlike dictionaries, they do not have key-value pairs.
+*Example: {1, 2, 3}, {"apple", "orange", "banana"}
+
+(*) Python variables and memory allocation.
+
+--> Memory management is very important for software developers to work efficiently with any programming language. As we know, Python is a famous and widely used programming language. It is used almost in every technical domain. In contrast to a programming language, memory management is related to writing memory-efficient code. We cannot overlook the importance of memory management while implementing a large amount of data. Improper memory management leads to slowness on the application and the server-side components. It also becomes the reason of improper working. If the memory is not handled well, it will take much time while preprocessing the data. 
+
+*** Python Memory Allocation
+Memory allocation is an essential part of the memory management for a developer. This process basically allots free space in the computer's virtual memory, and there are two types of virtual memory works while executing programs.
+
+-> Static Memory Allocation
+-> Dynamic Memory Allocation 
+
+** Static Memory Allocation -
+Static memory allocation happens at the compile time. For example - In C/C++, we declare a static array with the fixed sizes. Memory is allocated at the time of compilation. However, we cannot use the memory again in the further program.
+
+** Dynamic Memory Allocation
+Unlike static memory allocation, Dynamic memory allocates the memory at the runtime to the program. For example - In C/C++, there is a predefined size of the integer of float data type but there is no predefine size of the data types. Memory is allocated to the objects at the run time. We use the Heap for implement dynamic memory management. We can use the memory throughout the program.
+
+(*) Python operators: arithmetic, comparison, logical, bitwise.
+-->
+
+1.Arithmetic 
+
+- + - Addition
+- - - Subtraction
+- * - Multiplication
+- / - Division
+- // - Floor Division
+- % - Modules
+- ** - Exponentiation
+
+2. Comparison Operator
+
+- == - Equal to 
+- != - Not qual to
+- > - Greater than
+- < - Less than 
+- >= - Greater than or equal to 
+- <= - Less than or equal to 
+
+3. Logical Operators 
+
+- and - Logical AND 
+- or  - Logical OR 
+- not - Logical NOT 
+
+4. Bitwise Operator 
+
+- & - Bitwise AND
+- ` - 	`
+- ^ - Bitwise XOR
+- ~ - Bitwise NOT 
+- << - Left Shift 
+- >> - Right shift
+
+
+Example : 
+# Arithmetic
+a = 10
+b = 3
+print(a + b)  # 13
+print(a ** b) # 1000
+
+# Comparison
+print(a > b)  # True
+print(a == b) # False
+
+# Logical
+x = True
+y = False
+print(x and y) # False
+print(x or y)  # True
+print(not x)   # False
+
+# Bitwise
+c = 5  # Binary: 101
+d = 3  # Binary: 011
+print(c & d)  # 1 (Binary: 001)
+print(c | d)  # 7 (Binary: 111)
+
+
+(*) Introduction to conditional statements: if, else, elif.
+
+Conditional statements in Python allow you to execute specific blocks of code based on certain conditions. The primary keywords used are if, elif, and else.
+
+1. if Statement
+->Used to check a condition.If the condition evaluates to True, the block of code under if is executed.
+
+Syntax:
+if condition:
+    # Code to execute if condition is True
+Example:
+
+age = 18
+if age >= 18:
+    print("You are eligible to vote.")
+ 
+
+
+2. else Statement
+-> Used to define a block of code that runs if the if condition evaluates to False.
+
+Syntax:
+
+if condition:
+    # Code to execute if condition is True
+else:
+    # Code to execute if condition is False
+Example:
+
+age = 16
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+
+3. elif Statement
+->Stands for "else if."Used to check multiple conditions after an initial if condition.
+
+Syntax:
+
+if condition1:
+    # Code to execute if condition1 is True
+elif condition2:
+    # Code to execute if condition2 is True
+else:
+    # Code to execute if none of the above conditions are True
+Example:
+
+marks = 85
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 75:
+    print("Grade: B")
+elif marks >= 50:
+    print("Grade: C")
+else:
+    print("Grade: F")
+
+
+(*) Nested if-else conditions.
+-->
+
+*Nested if Statement : 
+-> In Python a Nested if statement, we can have an if…elif…else statement inside another if…elif…else statement. This is called nesting in computer programming. Any number of these statements can be nested inside one another. Indentation is the only way to figure out the level of nesting. This can get confusing, so it must be avoided if we can.
+
+-  Nested if statements enable us to use if ? else statement inside an outer if statement. 
+
+
+(*) Introduction to for and while loops.
+
+1. for loops
+- A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+
+- This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+
+2. while loops
+-  while loop we can execute a set of statements as long as a condition is true.
+
+  
+(*)  Using loops with collections (lists, tuples, etc.). 
+* List
+- Lists are used to store multiple items in a single variable.
+
+- Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+* Tuple
+- Tuples are used to store multiple items in a single variable.
+
+- Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+
+- A tuple is a collection which is ordered and unchangeable.
+
+
+(*) Defining and calling functions in Python. 
+-> A function is a block of code which only runs when it is called.
+
+- You can pass data, known as parameters, into a function.
+
+- A function can return data as a result.
+
+Example :
+def square( num ):    
+    """  
+    This function computes the square of the number.  
+    """    
+    return num**2  
+   
+object_ = square(6)
+    
+print( "The square of the given number is: ", object_ )    
+
+(*)  Function arguments (positional, keyword, default). 
+ *Arguments and Parameters in Python
+- Be it any programming language, Arguments and Parameters are the two words that cause a lot of confusion to programmers. Sometimes, these two words are used interchangeably, but actually, they have two different yet similar meanings. This tutorial explains the differences between these two words and dives deep into the concepts with examples.
+
+1. function with no Argument & No Return Value.
+2. function with Argument but no Return value.
+3. function with Argument & with Return Value.
+ 
+
+(*)  Scope of variables in Python. 
+-> Variable Scope in Python
+- Variables in Python language serve as the storage units for the various data values and data structures. When a variable is assigned to any Python object, it then points toward that object since they are reference, or a pointer, to that particular object in the memory location. Python programming language is not "statically typed," unlike other languages like c/c++. Variables do not have to have their types or initial values declared before use. When a variable is initially given a value, it is considered to have been formed
+
+(*) Built-in methods for strings, lists, etc.
+
+- capitalize() ->	Converts the first character to upper case
+- casefold()	-> Converts string into lower case
+- center()->	Returns a centered string
+- count() ->	Returns the number of times a specified value occurs in a string
+- encode()->	Returns an encoded version of the string
+- endswith()->	Returns true if the string ends with the specified value
+- expandtabs() ->	Sets the tab size of the string
+- find()->	Searches the string for a specified value and returns the position of where it was found
+- format() ->	Formats specified values in a string
+- format_map() ->	Formats specified values in a string
+- index() ->	Searches the string for a specified value and returns the position of where it was found
+- isalnum() ->	Returns True if all characters in the string are alphanumeric
+- isalpha()->	Returns True if all characters in the string are in the alphabet
+- isascii()	-> Returns True if all characters in the string are ascii characters
+- isdecimal() -> Returns True if all characters in the string are decimals
+- isdigit() ->	Returns True if all characters in the string are digits
+- isidentifier()->	Returns True if the string is an identifier
+- islower()	-> Returns True if all characters in the string are lower case
+- isnumeric() -> 	Returns True if all characters in the string are numeric
+- isprintable() ->	Returns True if all characters in the string are printable
+- isspace() -> 	Returns True if all characters in the string are whitespaces
+- istitle()	-> Returns True if the string follows the rules of a title
+- isupper() -> 	Returns True if all characters in the string are upper case
+- join() ->	Converts the elements of an iterable into a string
+- ljust()	-> Returns a left justified version of the string
+- lower()	-> Converts a string into lower case
+- lstrip()	->Returns a left trim version of the string
+- maketrans()	-> Returns a translation table to be used in translations
+- partition()->	Returns a tuple where the string is parted into three parts
+- replace()->	Returns a string where a specified value is replaced with a specified value
+- rfind()->	Searches the string for a specified value and returns the last position of where it was found
+- rindex()	->Searches the string for a specified value and returns the last position of where it was found
+- rjust()->	Returns a right justified version of the string
+- rpartition() ->	Returns a tuple where the string is parted into three parts
+- rsplit()	-> Splits the string at the specified separator, and returns a list
+- rstrip()	-> Returns a right trim version of the string
+- split()->	Splits the string at the specified separator, and returns a list
+- splitlines()->	Splits the string at line breaks and returns a list
+- startswith()	-> Returns true if the string starts with the specified value
+- strip()->	Returns a trimmed version of the string
+- swapcase()->	Swaps cases, lower case becomes upper case and vice versa
+- title()	-> Converts the first character of each word to upper case
+- translate() -> Returns a translated string
+- upper() ->	Converts a string into upper case
+
+
+
+(*) Understanding the role of break, continue, and pass in Python loops. 
+ * break statement
+- The break is a keyword in python which is used to bring the program control out of the loop. The break statement breaks the loops one by one, i.e., in the case of nested loops, it breaks the inner loop first and then proceeds to outer loops. In other words, we can say that break is used to abort the current execution of the program and the control goes to the next line after the loop.
+
+* continue Statement
+- Python continue keyword is used to skip the remaining statements of the current loop and go to the next iteration. In Python, loops repeat processes on their own in an efficient way. However, there might be occasions when we wish to leave the current loop entirely, skip iteration, or dismiss the condition controlling the loop.
+
+*Pass Statement
+- In this tutorial, we will learn more about past statements. It is interpreted as a placeholder for future functions, classes, loops, and other operations.
+
+
+(*) Understanding how to access and manipulate strings.
+1. Accessing Strings
+- Strings are indexed, starting from 0 for the first character.
+- Use square brackets [] to access characters by their index.
+
+2. Slicing
+- Access substrings by specifying a range: text[start:end]
+- The end index is exclusive.
+- Optional step allows skipping characters.
+ 
+(*) Basic operations: concatenation, repetition, string methods (upper(), lower(), etc.). 
+--> 
+1. Concatenation
+- Concatenation is the process of joining two or more strings together using the + operator.
+
+2. Repetition
+- You can repeat a string multiple times using the * operator.
+
+
+Basic String Operations in Python
+Strings in Python support several operations such as concatenation, repetition, and various methods for manipulation.
+
+1. Concatenation
+Concatenation is the process of joining two or more strings together using the + operator.
+
+2. Repetition
+You can repeat a string multiple times using the * operator.
+
+3. Common String Methods
+Python provides many built-in string methods for manipulation. Here are some of the most common ones:
+
+a) Changing Case
+- upper(): Converts all characters to uppercase.
+- lower(): Converts all characters to lowercase.
+- title(): Converts the first character of each word to uppercase.
+- capitalize(): Capitalizes the first character of the string.
+
+
+(*) String slicing. 
+--> string slicing in Python allows you to extract a substring from a given string by specifying a range of indices. This can be done using either the slice() method or the array slicing syntax [:].
